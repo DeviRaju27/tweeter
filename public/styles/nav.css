@@ -1,0 +1,49 @@
+nav {
+background-color: #2f937e;
+color: #FFFFFF;
+height: 120px;
+width: 100%;
+padding: 1.5em 1.5em;
+position: fixed;
+top:0;
+
+
+}
+nav span {
+  font-family: 'Bungee', cursive;
+  padding-top: 1em;
+  font-size: 40px;
+ 
+}
+.nav-button {
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  float: right;
+}
+.arrow {
+  color: #ff0000;
+  animation: floating 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+@keyframes floating {
+  from { transform: translate(0,  -5px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -5px); }    
+}

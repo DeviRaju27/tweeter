@@ -1,0 +1,31 @@
+.new-tweet{
+  width: 100%;
+}
+#tweet-text {
+  width: 100%;
+  padding: 10px 0 0 0;
+  border-width: 0 0 5px 0;
+  border-style: solid dotted inset double;
+  border-color: 000000;
+  background: inherit;
+}
+#tweet-text:focus {
+  outline: none;
+
+}
+#tweet-text::placeholder{
+  padding: 12px;
+}
+.counter{
+  float: right;
+}
+.new-tweet-button {
+  padding: 5px 20px;
+  background-color: #30937e;
+  border: navajowhite;
+  border-radius: 2px;
+  margin-top: 10px;
+  font-family: 'Bungee', cursive;
+  color: white;
+
+}

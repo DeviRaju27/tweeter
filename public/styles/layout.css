@@ -12,14 +12,93 @@ html {
 
 /*
  * Global layout stuff
+ font-family: 'Bungee', cursive;
  */
 
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ main {
+  display: flex;
+  justify-content: center;
+ width: 95%;
+ flex-direction: column;
+ background-color: #f4f1ec;
+ padding: 0 20px;
+ }
+
+ .all-tweets{
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+ }
+ .all-tweets:hover{
+  box-shadow: 5px 7px #88888882;
+ }
+
+ .all-tweets-article{
+  border: 5px #767676;
+  border-style: solid;
+  padding: 25px 25px 15px 25px;
+ }
+
+ .all-tweets-article header{
+  color: #767676;;
+  height: auto;
+  background: none;
+  margin: auto;
+  align-items: baseline;
+  display: inline;
+}
+.all-tweets-article header img{
+  width: 2em;
+  margin-right: 0.5em;
+}
+.tweet-username{
+  float: right;
+  color: #76767670;
+  position: relative;
+  top: 15px;
+}
+
+.username{
+  position: relative;
+    top: -15px;
+}
+ 
+.all-tweets-article footer{
+  color:#767676;
+  font-size: large;
+ }
+
+ .all-tweets-article footer span{
+  float: right;
+ 
+}
+.all-tweets-article footer span i{
+  padding: 0 5px;
+  color: #30937e;
+ 
+}
+.all-tweets-article footer span i:hover{
+  color: #adb111;
+  
+}
+
+.all-tweets-article p{
+  color:#767676;
+  font-size: 22px;
+  border-bottom: solid;
+    border-color: #767676;
+    border-width: 4px;
+    padding: 15px 25px 25px 25px;
+    margin: 10px 0;
+    font-weight: 600;
+ }
