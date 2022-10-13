@@ -4,7 +4,7 @@
 <head>
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
-
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
@@ -28,9 +28,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+  
   <!-- App JS -->
-  <script type="text/javascript" src="./scripts/client.js"></script>
+
 
 </head>
 
@@ -38,12 +38,12 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
-    <button class="nav-button"><b>Write</b> a new tweet <br><i class="fa-solid fa-angles-down arrow"></i></button>
+    <a class="nav-button" href="#header-id"><b>Write</b> a new tweet <br><i class="fa-solid fa-angles-down arrow"></i></a>
   </nav>
 
   <div class="empty-space"></div>
 
-  <header>
+  <header id ="header-id">
     <div class="header-avatar">
       <img src="/images/profile-hex.png">
     </div>
@@ -54,10 +54,10 @@
   </header>
 
   <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-
-      <form action="/tweets" method="POST">
+  <main class="container" >
+    <section class="new-tweet" >
+      <form id="new-tweet-form">
+        <div class='errorText'></div>
         <label for="tweet-text"></label>
         <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
         <div>
@@ -68,19 +68,13 @@
     </section>
  
 
-    <section class= "all-tweets">
-    <article class="all-tweets-article">
-      <header>   <img src="./images/headshot1.png"><span class ="username">Pichai</span><span class="tweet-username">@PichaiSundar</span></header>
-
-      <p>Take the time to find the thing that excites you!</p>
-
-      <footer>1 day ago<span><i class="fa-solid fa-flag"></i><i class="fa-solid fa-repeat"></i><i class="fa-solid fa-heart"></i></span></footer>
-
-    </article>
+    <section  id ="tweets-container">
     </section>
+    
   </main>
  
 </body>
 <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
-
+<script type="text/javascript" src="./scripts/client.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </html>

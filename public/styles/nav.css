@@ -1,5 +1,5 @@
 nav {
-background-color: #2f937e;
+background-color: #32a18a;
 color: #FFFFFF;
 height: 120px;
 width: 100%;
@@ -20,12 +20,15 @@ nav span {
   border: none;
   color: #FFFFFF;
   float: right;
+  text-decoration: none;
+  
 }
 .arrow {
   color: #ff0000;
   animation: floating 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  margin: 0 3em;
 }
 @keyframes bounce {
   0%,

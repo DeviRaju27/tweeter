@@ -31,15 +31,15 @@ body {
  width: 95%;
  flex-direction: column;
  background-color: #f4f1ec;
- padding: 0 20px;
+ padding: 0px 20px 0 40px;
  }
 
- .all-tweets{
+#tweets-container{
   display: flex;
   flex-direction: column;
   margin: 2em 0;
  }
- .all-tweets:hover{
+.all-tweets-article:hover{
   box-shadow: 5px 7px #88888882;
  }
 
@@ -47,9 +47,10 @@ body {
   border: 5px #767676;
   border-style: solid;
   padding: 25px 25px 15px 25px;
+  margin: 1.5em 0;
  }
 
- .all-tweets-article header{
+.tweetHeader{
   color: #767676;;
   height: auto;
   background: none;
@@ -57,42 +58,40 @@ body {
   align-items: baseline;
   display: inline;
 }
-.all-tweets-article header img{
+.tweetHeader img{
   width: 2em;
   margin-right: 0.5em;
 }
 .tweet-username{
   float: right;
   color: #76767670;
-  position: relative;
-  top: 15px;
+  
 }
 
 .username{
-  position: relative;
-    top: -15px;
+  
 }
  
-.all-tweets-article footer{
+.tweetFooter{
   color:#767676;
   font-size: large;
  }
 
- .all-tweets-article footer span{
+ .tweetFooter span{
   float: right;
  
 }
-.all-tweets-article footer span i{
+.tweetFooter span i{
   padding: 0 5px;
   color: #30937e;
  
 }
-.all-tweets-article footer span i:hover{
+.tweetFooter span i:hover{
   color: #adb111;
   
 }
 
-.all-tweets-article p{
+.tweetContent p{
   color:#767676;
   font-size: 22px;
   border-bottom: solid;
@@ -101,4 +100,5 @@ body {
     padding: 15px 25px 25px 25px;
     margin: 10px 0;
     font-weight: 600;
+    word-wrap: break-word;
  }

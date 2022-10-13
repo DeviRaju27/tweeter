@@ -3,7 +3,7 @@
 }
 #tweet-text {
   width: 100%;
-  padding: 10px 0 0 0;
+  padding: 50px 0 0 0;
   border-width: 0 0 5px 0;
   border-style: solid dotted inset double;
   border-color: 000000;
@@ -14,7 +14,7 @@
 
 }
 #tweet-text::placeholder{
-  padding: 12px;
+  /* padding: 12px; */
 }
 .counter{
   float: right;
