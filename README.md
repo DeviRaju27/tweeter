@@ -31,5 +31,8 @@ Tweeter is a simple, single-page Twitter clone built using HTML, CSS, JS, jQuery
 - Button on lower right corner to bring back up to the top of the page when user scrolls down the page
 - Responsive design provides a great user experience on mobile and desktop.
 
-![Screenshot of Desktop view]()
-![Screenshot of Tablet view]()
+-----------
+## Final Project
+
+![Screenshot of Desktop view](https://github.com/DeviRaju27/tweeter/blob/master/docs/Desktop-tweeter.png)
+![Screenshot of Tablet view](https://github.com/DeviRaju27/tweeter/blob/master/docs/Mobile-tweeter.png)
