@@ -1,19 +1,15 @@
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
+ App CSS for general layout style
  */
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- font-family: 'Bungee', cursive;
- */
 
 body {
   color: #545149;
@@ -22,83 +18,95 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- main {
+main {
   display: flex;
   justify-content: center;
- width: 95%;
- flex-direction: column;
- background-color: #f4f1ec;
- padding: 0px 20px 0 40px;
- }
+  width: 95%;
+  flex-direction: column;
+  background-color: #f4f1ec;
+  padding: 0px 20px 0 40px;
+}
 
-#tweets-container{
+#tweets-container {
   display: flex;
   flex-direction: column;
   margin: 2em 0;
- }
-.all-tweets-article:hover{
-  box-shadow: 5px 7px #88888882;
- }
+}
 
- .all-tweets-article{
+.all-tweets-article:hover {
+  box-shadow: 5px 7px #88888882;
+  background-color: #fff
+}
+
+.all-tweets-article {
   border: 5px #767676;
   border-style: solid;
+  border-radius: 10px 0 10px 0;
   padding: 25px 25px 15px 25px;
   margin: 1.5em 0;
- }
+  background-color: #ffffffba;
+}
 
-.tweetHeader{
-  color: #767676;;
+.tweetHeader {
+  color: #767676;
+  ;
   height: auto;
   background: none;
   margin: auto;
   align-items: baseline;
   display: inline;
 }
-.tweetHeader img{
+
+.tweetHeader img {
   width: 2em;
   margin-right: 0.5em;
 }
-.tweet-username{
+
+.tweet-username {
   float: right;
   color: #76767670;
-  
 }
 
-.username{
-  
-}
- 
-.tweetFooter{
-  color:#767676;
+.tweetFooter {
+  color: #767676;
   font-size: large;
- }
-
- .tweetFooter span{
-  float: right;
- 
 }
-.tweetFooter span i{
+
+.tweetFooter span {
+  float: right;
+}
+
+.tweetFooter span i {
   padding: 0 5px;
   color: #30937e;
- 
-}
-.tweetFooter span i:hover{
-  color: #adb111;
-  
 }
 
-.tweetContent p{
-  color:#767676;
+.tweetFooter span i:hover {
+  color: #adb111;
+}
+
+.tweetContent p {
+  color: #767676;
   font-size: 22px;
   border-bottom: solid;
-    border-color: #767676;
-    border-width: 4px;
-    padding: 15px 25px 25px 25px;
-    margin: 10px 0;
-    font-weight: 600;
-    word-wrap: break-word;
- }
+  border-color: #767676;
+  border-width: 4px;
+  padding: 15px 25px 25px 25px;
+  margin: 10px 0;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.scrollToTop i {
+  font-size: 40px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+}
+
+.scrollToTop {
+  display: none;
+}

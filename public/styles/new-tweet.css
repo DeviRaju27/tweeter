@@ -1,6 +1,8 @@
-.new-tweet{
+/* CSS for new tweet textrea and button */
+.new-tweet {
   width: 100%;
 }
+
 #tweet-text {
   width: 100%;
   padding: 50px 0 0 0;
@@ -8,17 +10,19 @@
   border-style: solid dotted inset double;
   border-color: 000000;
   background: inherit;
+  resize: none;
 }
+
 #tweet-text:focus {
   outline: none;
+}
 
-}
-#tweet-text::placeholder{
-  /* padding: 12px; */
-}
-.counter{
+.counter {
   float: right;
+  font-family: 'Bungee', cursive;
+  font-size: large;
 }
+
 .new-tweet-button {
   padding: 5px 20px;
   background-color: #30937e;
@@ -27,5 +31,4 @@
   margin-top: 10px;
   font-family: 'Bungee', cursive;
   color: white;
-
 }

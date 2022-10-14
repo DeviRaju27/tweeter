@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Meta Information -->
-  <title>Tweeter - Home Page</title>
+  <title>Tweeter - Home</title>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
     rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,13 +21,11 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
-  <!-- App JS -->
-
 
 </head>
 
@@ -38,24 +33,21 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
-    <a class="nav-button" href="#header-id"><b>Write</b> a new tweet <br><i class="fa-solid fa-angles-down arrow"></i></a>
+    <a class="nav-button" href=""><b>Write</b> a new tweet <br><i class="fa-solid fa-angles-down arrow"></i></a>
   </nav>
-
-  <div class="empty-space"></div>
-
-  <header id ="header-id">
+ <!-- Header-->
+  <header id="header-id">
     <div class="header-avatar">
       <img src="/images/profile-hex.png">
     </div>
-    <br>
     <div class="header-name">
-      <h2>Dev</h2>
+      <h2><b>Chandler</b> Bing</h2>
     </div>
   </header>
-
-  <!-- Page-specific (main) content here -->
-  <main class="container" >
-    <section class="new-tweet" >
+<!-- Main container with 2 sections for composing new tweet and for showing up all tweets-->
+  <main class="container">
+     <!-- Section for new tweet-->
+    <section class="new-tweet">
       <form id="new-tweet-form">
         <div class='errorText'></div>
         <label for="tweet-text"></label>
@@ -66,15 +58,16 @@
         </div>
       </form>
     </section>
- 
-
-    <section  id ="tweets-container">
+     <!-- Section for all tweets -->
+    <section id="tweets-container">
     </section>
-    
+    <a href="#" class="scrollToTop"><i class="fa-solid fa-circle-arrow-up"></i></a>
   </main>
- 
 </body>
+ <!-- App JS -->
 <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
 <script type="text/javascript" src="./scripts/client.js"></script>
+<script type="text/javascript" src="./scripts/scroll-to-top.js"></script>
+ <!-- External JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </html>

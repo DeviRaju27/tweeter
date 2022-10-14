@@ -1,0 +1,20 @@
+/* CSS for responsive screen */
+
+@media only screen and (min-width: 1024px) {
+  #header-id {
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 3%;
+    float: left;
+    padding: 25px;
+    height: auto;
+    border-radius: 12px 0 12px 0;
+  }
+
+  .container {
+    width: 66.7%;
+    clear: right;
+    margin-top: 200px;
+    padding: 0px 60px 0 60px;
+  }
+}
