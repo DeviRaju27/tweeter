@@ -6,7 +6,7 @@ Tweeter is a simple, single-page Twitter clone built using HTML, CSS, JS, jQuery
 
 ## Getting Started
 
-1. Fork and Clone your repository onto your local device.
+1. Fork this repository and Clone it onto your local device.
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm start` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
@@ -27,7 +27,9 @@ Tweeter is a simple, single-page Twitter clone built using HTML, CSS, JS, jQuery
 - A client-side Single Page App (SPA)
 - Communicates with a server via AJAX for seamless dynamic single page experience
 - Compose tweet section with Real Time character counter
-- An appropriate error message is displayed if the user submits an invalid tweet or contains more than 140 characters
+- An appropriate error message is displayed if the user submits an empty tweet or contains more than 140 characters
 - Button on lower right corner to bring back up to the top of the page when user scrolls down the page
 - Responsive design provides a great user experience on mobile and desktop.
 
+![Screenshot of Desktop view](https://github.com/DeviRaju27/tweeter/blob/master/docs/Desktop-tweeter.png)
+![Screenshot of Tablet view](https://github.com/DeviRaju27/tweeter/blob/master/docs/Mobile-tweeter.png)
